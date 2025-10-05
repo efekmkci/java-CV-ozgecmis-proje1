@@ -52,4 +52,4 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 
 ### 📄 Çıktı
 
-Program başarıyla çalıştığında, projenin ana dizininde **`Ali_Veli_CV.pdf`** adında bir PDF dosyası oluşturulacaktır.
+Program başarıyla çalıştığında, projenin ana dizininde **`ozgecmis.CV.pdf`** adında bir PDF dosyası oluşturulacaktır.
