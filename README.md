@@ -31,10 +31,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 
 1.  **Projeyi Klonlayın:**
     ```bash
-    git clone [https://github.com/Efe-Ekmekci/java-CV-ozgecmis-proje1
-.git](https://github.com/Efe-Ekmekci/java-CV-ozgecmis-proje1
-.git)
-    ```
+    git clone [https://github.com/EFE-EKMEKCİ/java-CV-ozgecmis-proje1.git](https://github.com/EFE-EKMEKCİ/java-CV-ozgecmis-proje1.git)```
 
 2.  **Gerekli Dosyaları Ekleyin:**
     Projenin doğru çalışabilmesi için `src/main/resources` klasörünün içinde aşağıdaki dosyaların bulunması gerekmektedir:
