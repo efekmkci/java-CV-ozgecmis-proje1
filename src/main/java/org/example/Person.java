@@ -1,8 +1,8 @@
-// Person.java dosyasının içine yapıştırılacak kod
 
-package org.example; // Bu satır sendeki paket adıyla aynı olmalı
 
-public class Person {
+package org.example; 
+
+public class Person ;
     private String fullName;
     private String email;
     private String phoneNumber;
