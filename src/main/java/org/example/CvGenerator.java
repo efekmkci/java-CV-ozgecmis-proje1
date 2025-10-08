@@ -5,11 +5,11 @@ package org.example;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.font.PDType0Font; // DİKKAT: Bu satır değişti!
+import org.apache.pdfbox.pdmodel.font.PDType0Font; 
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 import java.awt.Color;
-import java.io.File; // DİKKAT: Bu satır eklendi!
+import java.io.File; 
 import java.io.IOException;
 import java.util.List;
 
@@ -20,12 +20,11 @@ public class CvGenerator {
         PDPage page = new PDPage();
         document.addPage(page);
 
-        // --- YENİ BÖLÜM: Türkçe Destekli Fontları Yükleme ---
-        // Fontların "src/main/resources" klasöründe olduğundan emin olun!
+       
         PDType0Font fontRegular = PDType0Font.load(document, new File("src/main/resources/DejaVuSans.ttf"));
         PDType0Font fontBold = PDType0Font.load(document, new File("src/main/resources/DejaVuSans-Bold.ttf"));
         PDType0Font fontItalic = PDType0Font.load(document, new File("src/main/resources/DejaVuSans-Oblique.ttf"));
-        // --- YENİ BÖLÜM SONU ---
+     
 
         PDImageXObject pdImage = PDImageXObject.createFromFile("src/main/resources/profile-photo.jpg", document);
 
@@ -33,7 +32,7 @@ public class CvGenerator {
 
         contentStream.drawImage(pdImage, 450, 675, 100, 120);
 
-        // --- Kişisel Bilgiler (Artık yeni fontları kullanıyor) ---
+     
         contentStream.beginText();
         contentStream.setFont(fontBold, 24); // Değişti
         contentStream.setNonStrokingColor(Color.DARK_GRAY);
@@ -52,12 +51,9 @@ public class CvGenerator {
         contentStream.showText(person.getAddress());
         contentStream.endText();
 
-        // --- Özet Bölümü (Artık yeni fontları kullanıyor) ---
         addSectionTitle(contentStream, "Özet", 50, 680, fontBold); // Değişti
         float currentY = addParagraph(contentStream, person.getSummary(), 50, 660, 500, fontRegular); // Değişti
 
-
-        // --- İş Deneyimleri Bölümü (Artık yeni fontları kullanıyor) ---
         addSectionTitle(contentStream, "İş Deneyimi", 50, currentY - 40, fontBold); // Değişti
         currentY = currentY - 60; // İş deneyimlerinin yazılmaya başlayacağı Y koordinatı
 
@@ -88,7 +84,7 @@ public class CvGenerator {
         System.out.println("CV başarıyla oluşturuldu: " + filePath);
     }
 
-    // Yardımcı metotları da yeni fontları alacak şekilde güncelledik
+ 
     private void addSectionTitle(PDPageContentStream contentStream, String title, float x, float y, PDType0Font font) throws IOException { // Değişti
         contentStream.beginText();
         contentStream.setFont(font, 16); // Değişti
