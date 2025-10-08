@@ -1,6 +1,6 @@
 // CvGenerator.java 
 
-package org.example; // Paket adınızın org.example olduğundan emin olun
+package org.example; 
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
