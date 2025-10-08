@@ -1,7 +1,6 @@
 // JobExperience.java 
 
-package org.example; // Bu satır sendeki paket adıyla aynı olmalı
-
+package org.example; 
 public class JobExperience {
     private String jobTitle;
     private String company;
