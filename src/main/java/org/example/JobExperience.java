@@ -1,4 +1,4 @@
-// JobExperience.java dosyasının içine yapıştırılacak kod
+// JobExperience.java 
 
 package org.example; // Bu satır sendeki paket adıyla aynı olmalı
 
