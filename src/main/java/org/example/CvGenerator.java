@@ -1,4 +1,4 @@
-// CvGenerator.java dosyasının GÜNCELLENMİŞ hali
+// CvGenerator.java 
 
 package org.example; // Paket adınızın org.example olduğundan emin olun
 
