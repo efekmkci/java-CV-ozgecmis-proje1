@@ -1,4 +1,4 @@
-// Main.java dosyasının içine yapıştırılacak kod
+
 
 package org.example;// Bu satır sendeki paket adıyla aynı olmalı
 
