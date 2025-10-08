@@ -1,6 +1,6 @@
 
 
-package org.example;// Bu satır sendeki paket adıyla aynı olmalı
+package org.example;
 
 import java.io.IOException;
 import java.util.ArrayList;
